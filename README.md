@@ -1,41 +1,34 @@
-# Shop Project
+# Overview
 
-A small React storefront made with separate HTML, CSS, and React files. It is intended to be published directly with GitHub Pages using **Deploy from a branch**. It does not require a `deploy.yml` workflow, npm, or a build step.
+{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
 
-## Files
+{Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
 
-- `index.html` — the HTML page and the CDN links for React and Babel.
-- `styles.css` — all page styling, layout, responsive rules, and simple effects.
-- `app.jsx` — the React application, five sample products, cart, and checkout behavior.
+{Describe your purpose for writing this software.}
 
-Both `styles.css` and `app.jsx` are kept under 400 lines to make the project easier to read and edit.
+{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
 
-## Run locally
+[Software Demo Video](http://youtube.link.goes.here)
 
-Because the JSX file is compiled in the browser by Babel, use a local web server rather than opening `index.html` directly as a file. One simple option is the **Live Server** extension in Visual Studio Code:
+# Web Pages
 
-1. Open this folder in Visual Studio Code.
-2. Install the Live Server extension if it is not already installed.
-3. Right-click `index.html` and choose **Open with Live Server**.
+{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
 
-An internet connection is needed because React, ReactDOM, and Babel are loaded from a public CDN.
+# Development Environment
 
-## Publish with GitHub Pages
+{Describe the tools that you used to develop the software}
 
-1. Put `index.html`, `styles.css`, and `app.jsx` in the root of your GitHub repository.
-2. Open the repository's **Settings → Pages** page.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Select the `main` branch and the `/(root)` folder, then save.
-5. Wait for GitHub Pages to publish the site.
+{Describe the programming language that you used and any libraries.}
 
-Do not put these files inside an extra nested project folder unless you configure GitHub Pages to publish that folder.
+# Useful Websites
 
-## Customize products
+{Make a list of websites that you found helpful in this project}
+* [Web Site Name](http://url.link.goes.here)
+* [Web Site Name](http://url.link.goes.here)
 
-Open `app.jsx` and edit the `PRODUCTS` array near the top. Each product has an `id`, `name`, `category`, `price`, and `description`.
+# Future Work
 
-Product images are not included. To add your own later, use a relative path in an `<img>` element inside the product card, such as `./images/lamp.jpg`. Add the image file to an `images` folder in the repository.
-
-## Checkout note
-
-The checkout performs local format checks only. It does not contact a payment processor, verify a card with a bank, charge money, or send or save entered payment information. Use fictional details only. This project is a front-end practice storefront, not a real payment system.
+{Make a list of things that you need to fix, improve, and add in the future.}
+* Item 1
+* Item 2
+* Item 3
