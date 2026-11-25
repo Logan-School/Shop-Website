@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f7f5" />
+  <meta name="description" content="Shop Project — a simple sample storefront." />
+  <title>Shop Project</title>
+
+  <!-- The page layout and appearance are kept in a separate CSS file. -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- React will render the shop inside this element. -->
+  <div id="root">
+    <p class="loading-message">Loading Shop Project...</p>
+  </div>
+
+  <!--
+    React and ReactDOM are loaded from a CDN so GitHub Pages can host
+    this project without npm, a build command, or a deployment workflow.
+  -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"
+    onerror="document.getElementById('root').textContent = 'React could not load. Check your internet connection and refresh.'">
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"
+    onerror="document.getElementById('root').textContent = 'ReactDOM could not load. Check your internet connection and refresh.'">
+  </script>
+
+  <!-- Babel allows the separate JSX file to run directly in the browser. -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.26.10/babel.min.js"
+    onerror="document.getElementById('root').textContent = 'The JSX compiler could not load. Check your internet connection and refresh.'">
+  </script>
+
+  <!-- The React application is stored separately in app.jsx. -->
+  <script type="text/babel" data-presets="react" src="./app.jsx"></script>
+</body>
+</html>
