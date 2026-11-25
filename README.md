@@ -18,8 +18,8 @@ The languages I used are JavaScript, HTML, and CSS. The libraries I used are Rea
 
 # Useful Websites
 
-* [Web Site Name](https://react.dev/learn)
-* [Web Site Name](https://www.w3schools.com/react/)
+* [React](https://react.dev/learn)
+* [w3schools](https://www.w3schools.com/react/)
 
 # Future Work
 
