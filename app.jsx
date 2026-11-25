@@ -27,7 +27,6 @@ function QuantityControl({ value, decrease, increase, label, compact = false }) 
   );
 }
 
-// A product card has no image; add your own image element here later if needed.
 function ProductCard({ product, quantity, changeQuantity, add }) {
   return (
     <article className="product-card">
@@ -101,7 +100,7 @@ function App() {
     setError("");
   }
 
-  // This is a format check only. No payment details are sent or processed.
+  // This checks the format to see if it could be valid payment information.
   function submitPayment(event) {
     event.preventDefault();
     const digits = payment.number.replace(/\D/g, "");
@@ -118,7 +117,7 @@ function App() {
     else if (!validExpiry) setError("Enter a valid, unexpired date in MM/YY format.");
     else if (!/^\d{3,4}$/.test(payment.cvv)) setError("Enter a 3- or 4-digit security code.");
     else if (!/^\d{5}(?:-\d{4})?$/.test(payment.zip)) setError("Enter a valid 5-digit ZIP code or ZIP+4.");
-    else setPage("success"); // Show a sample confirmation; no charge is made.
+    else setPage("success"); // Show a sample confirmation.
   }
 
   function openCart() { setError(""); setPage("checkout"); }
@@ -166,7 +165,7 @@ function App() {
             <p>Review your items and enter sample payment details to finish.</p>
           </div>
 
-          {!cartItems.length ? (
+          {!cartItems.length? (
             <section className="empty-state">
               <h2>Your cart is empty</h2>
               <p>Return to the shop to add products to your cart.</p>
