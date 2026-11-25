@@ -5,7 +5,7 @@ const { useState } = React;
 // Product details are kept here so they are easy to update.
 const PRODUCTS = [
   { id: 1, name: "Heating Desk Lamp", category: "Lighting", price: 29.99, description: "A lamp for a desk or bedside table." },
-  { id: 2, name: "Custom Mug", category: "Homeware", price: 14.50, description: "A comfortable mug for your favorite drink." },
+  { id: 2, name: "Custom Mug", category: "Homeware", price: 14.50, description: "A customizable mug for your favorite drink." },
   { id: 3, name: "Sketch Notebook", category: "Stationery", price: 9.99, description: "A notebook for sketches, notes, lists, and ideas." },
   { id: 4, name: "Water Bottle", category: "Everyday", price: 22.00, description: "A reusable bottle to take with you." },
   { id: 5, name: "Headphones", category: "Technology", price: 49.99, description: "Headphones for music, calls, and focus." }
